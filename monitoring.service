@@ -1,0 +1,10 @@
+[Unit]
+Description=Monitor test process
+
+[Service]
+ExecStart=/usr/local/bin/monitoring.sh
+Restart=always
+User=root
+
+[Install]
+WantedBy=multi-user.target
